@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="resumeform">
+            <h1>STATIC RESUME GENERATOR BY WASEEM KHAN</h1>
+                  
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input name="name" id="name" type="text" required>
+
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input name="phone" id="phone" type="text" required>
+                    
+                    <label for="image">Profile Picture:</label>
+                    <input class="image" name="image" id="image" type="file" accept="image/*" required>
+
+                </fieldset>
+
+                
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="qualification">Qualification:</label>
+                    <textarea id="qualification" name="qualification" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experience Details</legend>
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" name="experience" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label for="skills">Related Skills:</label>
+                    <textarea id="skills" name="skills" rows="4" required></textarea>
+                </fieldset>
+
+                <button type="submit">Generate Your Resume</button>
+            </form>
+        </div>
+
+        <div id="resumeoutput">
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

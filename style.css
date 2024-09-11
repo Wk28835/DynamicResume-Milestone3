@@ -1,0 +1,197 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
+  color: #333;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+#resumeform {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+.image{
+  display: block;
+  margin: 0 auto;
+  border: 4px solid #4a90e2;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
+}
+
+#resumeoutput {
+  background: #ffffff;
+  font-size: 1.4em;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  border: 4px solid #4a90e2;;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding:30px;
+  width: 100%;
+  margin-top: 20px; /* Ensures space between form and output */
+  animation: fadeIn 1s ease-in-out;
+}
+
+#resumeoutput h1{
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4a90e2;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4a90e2;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Fieldset Styling */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Input and Textarea Styling */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: scale(1.02);
+}
+
+button:active {
+  background-color: #2a5d8f;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #resumeform {
+    padding: 20px;
+  }
+
+  #resumeoutput {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  #resumeform {
+    padding: 15px;
+  }
+
+  #resumeoutput {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  fieldset {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
